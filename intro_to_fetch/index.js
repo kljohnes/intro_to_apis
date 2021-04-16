@@ -23,7 +23,8 @@ fetch(<url>)
     .then(<cb to use the data>)
 */
 
-const baseURL = "https:ghibliapi.herokuapp.com"
+const baseURL = "https://ghibliapi.herokuapp.com"
+//"https://ghibliapi.herokuapp.com/films" is equivalent to the below
 fetch(baseURL + "/films") // Reaches out to internet to get data
     .then(res => res.json())//Returns only json data
     .then(json => {
